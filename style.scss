@@ -1,0 +1,140 @@
+// style variables
+$white: hsl(225, 100%, 98%);
+$pale-blue: hsl(225, 100%, 94%);
+$light-blue: hsl(245, 75%, 52%);
+$blue: hsl(224, 23%, 55%);
+$dark-blue: hsl(223, 47%, 23%);
+// font 
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+// file data 
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  background-color: $pale-blue;
+  padding-bottom: 12px;
+
+  a {
+    color: $dark-blue;
+    font-weight: 700;
+  }
+}
+
+// challenge section
+.order-component {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: $pale-blue;
+  background-image: url('/images/pattern-background-desktop.svg');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  height: 97vh;
+
+  .card {
+    width: min-content;
+    border-radius: 16px;
+    background-color: $white;
+    font-size: 16px;
+
+    .card-img {
+      width: 360px;
+      border-radius: 16px 16px 0 0;
+    }
+
+    .card-body {
+      text-align: center;
+      padding: 10px 20px;
+
+      .card-title {
+        font-size: 18px;
+        font-weight: 900;
+        color: $dark-blue;
+      }
+
+      .card-info {
+        font-size: 14px;
+        font-weight: 500;
+        color: $blue;
+      }
+
+      .card-package {
+        display: flex;
+        align-items: center;
+        background-color: rgba($color: $pale-blue, $alpha: 0.5);
+        border-radius: 12px;
+        padding: 8px 12px;
+        margin: 20px 0;
+
+        .pack-price {
+          margin-left: 10%;
+          margin-right: 20%;
+
+          .title {
+            font-size: 16px;
+            font-weight: 700;
+            color: $dark-blue;
+
+          }
+
+          .price {
+            margin-top: -10px;
+            font-size: 14px;
+            font-weight: 500;
+            color: $blue;
+          }
+        }
+
+        .pack-state {
+          color: $light-blue;
+
+          &:hover,
+          :active {
+            color: #766cf1;
+          }
+        }
+      }
+
+      .action-btn {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 18px 0;
+        cursor: pointer;
+
+        .order-submit {
+          background-color: $light-blue;
+          color: $white;
+          border-radius: 10px;
+          padding: 12px 36px;
+          margin-bottom: 20px;
+          width: 75%;
+          box-shadow: 0px 12px 16px rgba($color: $dark-blue, $alpha: 0.30);
+
+          &:hover,
+          :active {
+            background-color: #766cf1;
+          }
+        }
+
+        .order-cancel {
+          background-color: transparent;
+          color: $blue;
+
+          &:hover,
+          :active {
+            color: $dark-blue;
+          }
+        }
+      }
+    }
+  }
+}

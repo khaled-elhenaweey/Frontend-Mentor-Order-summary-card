@@ -1,0 +1,152 @@
+@import url("https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap");
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Red Hat Display', sans-serif;
+}
+
+.attribution {
+  font-size: 12px;
+  text-align: center;
+  background-color: #e0e8ff;
+  padding-bottom: 12px;
+}
+
+.attribution a {
+  color: #1f2f56;
+  font-weight: 700;
+}
+
+.order-component {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e0e8ff;
+  background-image: url("/images/pattern-background-desktop.svg");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: top;
+  height: 97vh;
+}
+
+.order-component .card {
+  width: -webkit-min-content;
+  width: -moz-min-content;
+  width: min-content;
+  border-radius: 16px;
+  background-color: #f5f7ff;
+  font-size: 16px;
+}
+
+.order-component .card .card-img {
+  width: 360px;
+  border-radius: 16px 16px 0 0;
+}
+
+.order-component .card .card-body {
+  text-align: center;
+  padding: 10px 20px;
+}
+
+.order-component .card .card-body .card-title {
+  font-size: 18px;
+  font-weight: 900;
+  color: #1f2f56;
+}
+
+.order-component .card .card-body .card-info {
+  font-size: 14px;
+  font-weight: 500;
+  color: #7280a7;
+}
+
+.order-component .card .card-body .card-package {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: rgba(224, 232, 255, 0.5);
+  border-radius: 12px;
+  padding: 8px 12px;
+  margin: 20px 0;
+}
+
+.order-component .card .card-body .card-package .pack-price {
+  margin-left: 10%;
+  margin-right: 20%;
+}
+
+.order-component .card .card-body .card-package .pack-price .title {
+  font-size: 16px;
+  font-weight: 700;
+  color: #1f2f56;
+}
+
+.order-component .card .card-body .card-package .pack-price .price {
+  margin-top: -10px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #7280a7;
+}
+
+.order-component .card .card-body .card-package .pack-state {
+  color: #3829e0;
+}
+
+.order-component .card .card-body .card-package .pack-state:hover,
+.order-component .card .card-body .card-package .pack-state :active {
+  color: #766cf1;
+}
+
+.order-component .card .card-body .action-btn {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  margin: 18px 0;
+  cursor: pointer;
+}
+
+.order-component .card .card-body .action-btn .order-submit {
+  background-color: #3829e0;
+  color: #f5f7ff;
+  border-radius: 10px;
+  padding: 12px 36px;
+  margin-bottom: 20px;
+  width: 75%;
+  -webkit-box-shadow: 0px 12px 16px rgba(31, 47, 86, 0.3);
+          box-shadow: 0px 12px 16px rgba(31, 47, 86, 0.3);
+}
+
+.order-component .card .card-body .action-btn .order-submit:hover,
+.order-component .card .card-body .action-btn .order-submit :active {
+  background-color: #766cf1;
+}
+
+.order-component .card .card-body .action-btn .order-cancel {
+  background-color: transparent;
+  color: #7280a7;
+}
+
+.order-component .card .card-body .action-btn .order-cancel:hover,
+.order-component .card .card-body .action-btn .order-cancel :active {
+  color: #1f2f56;
+}
+/*# sourceMappingURL=style.css.map */
